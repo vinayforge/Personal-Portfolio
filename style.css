@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 16px 64px;
+    background-color: #060B18;
+     border-bottom: 1px solid rgba(255,255,255,0.08);
+      backdrop-filter: blur(10px);
+}
+
+.logo-container{
+    display: flex;
+    gap: 2px;
+    transition: all 0.3s ease;
+}
+.navbar .logo-icon{
+    color: #7C6CF8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar .logo-title{
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 48px;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+     transition: all 0.3s ease;
+}
+
+#home-link
+{
+    color: #7C6CF8;
+}
+
+.hire-btn{
+    background-color: #6366F1;
+    color: #FFFFFF;
+   padding: 8px 24px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+     transition: all 0.3s ease;
+}
+
+.hire-btn:hover{
+    color: #7C6CF8;
+     background-color: #060B18;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+}
+
+.navbar ul li a:hover{
+    color: #9689fb;
+}
+
+.logo-container:hover{
+    transform: scale(1.03);
+}
