@@ -1,83 +1,223 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-     font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-.navbar{
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 16px 64px;
+  background-color: #060b18;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+}
+
+.logo-container {
+  display: flex;
+  gap: 2px;
+  transition: all 0.3s ease;
+}
+.navbar .logo-icon {
+  color: #7c6cf8;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar .logo-title {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 48px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 48px;
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+#home-link {
+  color: #7c6cf8;
+}
+
+.hire-btn {
+  background-color: #6366f1;
+  color: #ffffff;
+  padding: 8px 24px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.hire-btn:hover {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+  transform: translateY(-2px);
+}
+
+.navbar ul li a:hover {
+  color: #9689fb;
+}
+
+.logo-container:hover {
+  transform: scale(1.03);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 80px 64px;
+  gap: 64px;
+  background-color: #060b18;
+  color: #ffffff;
+  min-height: 90vh;
+}
+
+.hero .hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero .hero-image {
+  flex: 1;
+}
+
+.hero .hero-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero .hero-content p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 32px;
+  color: #b0b0b0;
+  line-height: 1.6;
+  max-width: 520px;
+}
+
+.hero .hero-content .hire-btn {
+  font-size: 18px;
+  padding: 12px 32px;
+}
+
+.hero .hero-content h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.hero .hero-content h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  color: #7c6cf8;
+  letter-spacing: 1px;
+}
+
+.hero-content .btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: #6366f1;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  margin-right: 16px;
+}
+
+.hero-content .cv-btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: transparent;
+  color: white;
+  border: 2px solid #9495bc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+.hero-content .cv-btn:hover {
+  background: #6366f1;
+  color: white;
+  border-radius: 10px;
+ border: 2px solid #6366F1;
+  transform: translateY(-2px);
+}
+
+.hero-content .btn:hover {
+  background: transparent;
+  border: 2px solid #6366f1;
+  color: #6366f1;
+  transform: translateY(-2px);
+}
+
+/*
+.hero-image img {
+  width: 380px;
+  max-width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+  */
+
+.other-contact{
     display: flex;
     align-items: center;
-    padding: 16px 64px;
-    background-color: #060B18;
-     border-bottom: 1px solid rgba(255,255,255,0.08);
-      backdrop-filter: blur(10px);
+    gap: 40px;
+    margin-top: 32px;
 }
 
-.logo-container{
-    display: flex;
-    gap: 2px;
-    transition: all 0.3s ease;
-}
-.navbar .logo-icon{
-    color: #7C6CF8;
-    font-size: 24px;
-    font-weight: 700;
+.github-link {
+  color: #ffffff;
+  font-size: 24px;
+  transition: all 0.3s ease;
 }
 
-.navbar .logo-title{
-    color: #FFFFFF;
-    font-size: 24px;
-    font-weight: 700;
+.github-link:hover {
+  color: #7c6cf8;
 }
 
-.navbar ul{
-    display: flex;
-    gap: 48px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: 48px;
+.linkedin-link {
+  color: #ffffff;
+  font-size: 24px;
+  transition: all 0.3s ease;
 }
 
-.navbar ul li{
-    list-style: none;
+.linkedin-link:hover {
+  color: #7c6cf8;
 }
 
-.navbar ul li a{
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 500;
-     transition: all 0.3s ease;
+.mail-link {
+  color: #ffffff;
+  font-size: 24px;
+  transition: all 0.3s ease;
 }
 
-#home-link
-{
-    color: #7C6CF8;
-}
-
-.hire-btn{
-    background-color: #6366F1;
-    color: #FFFFFF;
-   padding: 8px 24px;
-    border: 2px solid transparent;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 500;
-     transition: all 0.3s ease;
-}
-
-.hire-btn:hover{
-    color: #7C6CF8;
-     background-color: #060B18;
-    cursor: pointer;
-    border: 2px solid #FFFFFF;
-}
-
-.navbar ul li a:hover{
-    color: #9689fb;
-}
-
-.logo-container:hover{
-    transform: scale(1.03);
+.mail-link:hover {
+  color: #7c6cf8;
 }
