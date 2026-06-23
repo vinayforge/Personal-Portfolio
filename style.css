@@ -221,3 +221,111 @@
 .mail-link:hover {
   color: #7c6cf8;
 }
+
+
+/* About Me*/
+
+.about{
+  display: flex;
+  padding: 32px 64px;
+  gap: 32px
+}
+
+.about-image{
+  flex: 1;
+  margin-left: 64px;
+  margin-right: 64px;
+
+    width: 160px;
+    height: 400px;
+
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 8px;
+}
+
+.about-content{
+  flex: 1;
+}
+
+.about-content h4{
+  color: #6366f1;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+
+.about-content h2{
+  margin-bottom: 16px;
+}
+
+.about-content .description{
+   color: #7d7d7d;
+  line-height: 1.6;
+  max-width: 560px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.about-content .my-information{
+  display: flex;
+   gap: 48px;
+    padding-top: 16px;
+   
+}
+
+.info-box h5{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.info-box p{
+  margin-bottom: 24px;
+}
+
+.about-btn{
+    display: inline-block;
+  padding: 12px 28px;
+  background: transparent;
+  color: black;
+  border: 2px solid #9495bc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-radius: 10px;
+}
+
+.about-btn:hover{
+   background: #6366f1;
+  color: white;
+  border-radius: 10px;
+ border: 2px solid #6366F1;
+  transform: translateY(-2px);
+}
+
+.info-box i{
+    transition: 0.3s;
+}
+
+.info-box:hover i{
+
+   color: #6366f1;
+  margin-bottom: 12px;
+    transform: scale(1.2);
+}
+
+.info-box {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.icon {
+    font-size: 24px;
+    color: #6366f1;
+}
+
