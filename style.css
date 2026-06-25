@@ -313,7 +313,7 @@
 
 .info-box:hover i{
 
-   color: #6366f1;
+  
   margin-bottom: 12px;
     transform: scale(1.2);
 }
@@ -329,3 +329,70 @@
     color: #6366f1;
 }
 
+
+
+/* Skill Section*/
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers h2 and h3 */
+  background-color: #eaeafc;
+  padding: 32px 64px;
+}
+
+.skills h3{
+  color: #6366f1;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.skills h2{
+  font-size: 24px;
+  font-weight: 600;
+}
+.skill-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.skill-card{
+  padding: 24px;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.skill-card .icon{
+  font-size: 40px;
+}
+
+.skill-card .html{
+  color: #E34F26;
+}
+
+.skill-card .css{
+  color: #1572B6;
+}
+
+.skill-card .js{
+  color: #F7DF1E;
+}
+
+.skill-card .java{
+  color: #007396;
+}
+
+.skill-card .github{
+   color: #181717;
+}
+
+.skill-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15);
+}
